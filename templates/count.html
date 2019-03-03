@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字数统计</title>
+</head>
+<body>
+<h1>统计结果，总字数为：{{ count}}个字</h1>
+<h2>你的文本：</h2>
+{{text}}
+<br>
+<h2>出现频率：</h2>
+{{wordict}}
+<br>
+{{sorted}}
+<br>
+{% if k == ' ' %}
+    {{ k }} - {{ v }}
+{% endif %}
+
+{%  for k,v in sorted %}
+{{ k }} - {{ v }}
+    <br>
+{% endfor %}
+
+</body>
+</html>
